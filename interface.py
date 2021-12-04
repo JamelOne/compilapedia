@@ -6,7 +6,25 @@ window.title("Python Tkinter Text Box")
 
  
 def clickMe():
-    label.configure(text= 'Texto: ' + nameEntered.get('1.0', 'end'))
+    texto = nameEntered.get('1.0', 'end')
+    label.configure(text= 'Texto: ' + texto)
+    palabras = texto.split(sep=" ")
+    palabras[-1] = palabras[-1][:-1]
+    print(palabras)
+    # for palabra in palabras:
+    #     if(aceitaNome(palabra)):
+    #         return {
+    #             'tipo': 'nome',
+    #             'conteudo':palabra
+    #         }
+    #     if(aceitaVerbo(palabra)):
+    #         return {
+    #             'tipo': 'verbo',
+    #             'conteudo':palabra
+    #         }
+    #     return False
+    
+
  
 label = tk.Label(window, text = "Insira o texto!\n")
 label.pack(side=tk.BOTTOM)
