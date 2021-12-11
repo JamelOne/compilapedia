@@ -1,10 +1,7 @@
-import re
+from automato import *
 
-def aceitaVerbo(string):
-    if re.match("^(é|era|foi)$", string):
-        return True
-    else:
-        return False
+verbo = {0: {"^(é|era|foi)$": 1},
+         1: {}}
+finais = [1]
 
-x = aceitaVerbo('foi')
-print(x)
+x = print(aceita(verbo, 0, finais, ['era']))
