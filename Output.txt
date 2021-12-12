@@ -1,0 +1,38 @@
+Caio Júlio César (em latim: Caius ou Gaius Iulius Caesar) foi um patrício, líder militar e político romano.
+"Caio" : NOME
+"Júlio" : NOME
+"César" : NOME
+"foi" : VERBO
+"um" : ARTIGO
+"patrício" : ADJETIVO
+"," : SEPARADOR
+"líder" : ADJETIVO
+"militar" : ADJETIVO
+"e" : SEPARADOR
+"político" : ADJETIVO
+"romano" : ADJETIVO
+"." : FINAL
+
+Caio Júlio César (em latim: Caius ou Gaius Iulius Caesar) foi um patrício, líder militar e político romano.
+"Caio" : NOME
+"Júlio" : NOME
+"César" : NOME
+"foi" : VERBO
+"um" : ARTIGO
+"patrício" : ADJETIVO
+"," : SEPARADOR
+"líder" : ADJETIVO
+"militar" : ADJETIVO
+"e" : SEPARADOR
+"político" : ADJETIVO
+"romano" : ADJETIVO
+"." : FINAL
+
+Jamelão é um estudante e estagiario
+"Jamelão" : NOME
+"é" : VERBO
+"um" : ARTIGO
+"estudante" : ADJETIVO
+"e" : SEPARADOR
+"estagiario" : ADJETIVO
+

@@ -49,6 +49,8 @@ def analisarLexico(lista_palavras):
         f.close() 
     label.configure(text=texto)
     print(list_tokens)
+    return list_tokens
+
 def clickMe():
      # ############################################
      #                   INÍCIO                  #
@@ -61,7 +63,13 @@ def clickMe():
         f.close() 
     texto = re.sub("[\(\[].*?[\)\]]", "", texto)
     lista_palavras = texto.split()
-    analisarLexico(lista_palavras)
+    list_tokens=analisarLexico(lista_palavras)
+    with open('Output.txt', 'a') as f:
+        f.write('\n')
+        f.close()
+    
+    
+
     # ############################################
      #                   INÍCIO                  #
      #               ANALISADOR SINTÁTICO        #
