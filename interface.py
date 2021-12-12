@@ -17,7 +17,10 @@ def clickMe():
     # label.configure(text= 'Texto: ' + texto)
     texto = re.sub("[\(\[].*?[\)\]]", "", texto)
     lista_auxiliar = texto.split()
-    lista_auxiliar[-1] = lista_auxiliar[-1][:-1] # Removendo o \n do final.
+    print(lista_auxiliar)
+    if lista_auxiliar[-1][:-1]=='\n':
+        lista_auxiliar[-1] = lista_auxiliar[-1][:-1] # Removendo o \n do final.
+    print(lista_auxiliar)
     lista_final = []
     for palavra in lista_auxiliar:
         if(re.match(".*\,", palavra)):
