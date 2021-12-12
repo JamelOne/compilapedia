@@ -51,35 +51,8 @@ def clickMe():
     
     texto = nameEntered.get('1.0', 'end')
     texto = re.sub("[\(\[].*?[\)\]]", "", texto)
-    lista_auxiliar = texto.split()
-    print(lista_auxiliar)
-    if lista_auxiliar[-1][:-1]=='\n':
-        lista_auxiliar[-1] = lista_auxiliar[-1][:-1] # Removendo o \n do final.
-    print(lista_auxiliar)
-    lista_final = []
-    for palavra in lista_auxiliar:
-        if(re.match(".*\,", palavra)):
-                lista_final.extend(palavra.rpartition(",")[:2])                
-        elif(re.match(".*\.", palavra)):
-                lista_final.extend(palavra.rpartition(".")[:2])
-        else:
-                lista_final.append(palavra)
-    print(lista_final)
-    list_tokens = list()
-    texto = ''
-    for elem in lista_final:
-        if(re.match("^(é|era|foi)$",elem)):
-            list_tokens.append("VERBO")
-        else:
-            for i in range(len(list_regra)):
-                if(automato.aceita(list_regra[i], 0, list_finais[i], elem)):
-                    list_tokens.append(texto_retorno[i])
-                    texto+=f'"{elem}":{texto_retorno[i]}\n'
-                    print('text: '+texto)
-                    break
-    label.configure(text=texto)
-    print(list_tokens)
-
+    lista_palavras = texto.split()
+    analisarLexico(lista_palavras)
     # ############################################
      #                   INÍCIO                  #
      #               ANALISADOR SINTÁTICO        #
