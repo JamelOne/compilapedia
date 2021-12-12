@@ -8,9 +8,11 @@ list_finais = [nome.finais,artigo.finais,separadores.finais,
                 final.finais,adjetivo.finais]
 texto_retorno = ["NOME", "ARTIGO", "SEPARADOR", "FINAL", "ADJETIVO"]
 
+
 def julioCesar():
     julioCesar = "Caio Júlio César (em latim: Caius ou Gaius Iulius Caesar) foi um patrício, líder militar e político romano." 
     nameEntered.setvar(julioCesar)
+
 def analisarLexico(lista_palavras):
     print(lista_palavras)
     if lista_palavras[-1][:-1]=='\n':
@@ -33,14 +35,18 @@ def analisarLexico(lista_palavras):
             list_tokens.append({
                     'tipo':'VERBO',
                     'conteudo':elem})
+            texto+=f'"{elem}" : VERBO\n'
         else:
             for i in range(len(list_regra)):
                 if(automato.aceita(list_regra[i], 0, list_finais[i], elem)):
                     list_tokens.append({
                         'tipo':texto_retorno[i],
                         'conteudo':elem})
-                    texto+=f'"{elem}":{texto_retorno[i]}\n'
+                    texto+=f'"{elem}" : {texto_retorno[i]}\n'
                     break
+    with open('Output.txt', 'a') as f:
+        f.write(texto)
+        f.close() 
     label.configure(text=texto)
     print(list_tokens)
 def clickMe():
@@ -50,6 +56,9 @@ def clickMe():
     # ############################################
     
     texto = nameEntered.get('1.0', 'end')
+    with open('Output.txt', 'a') as f:
+        f.write(texto)
+        f.close() 
     texto = re.sub("[\(\[].*?[\)\]]", "", texto)
     lista_palavras = texto.split()
     analisarLexico(lista_palavras)
@@ -59,7 +68,6 @@ def clickMe():
     # ############################################
     
 
- 
 
 window = tk.Tk()
 window.title("Python Tkinter Text Box")
