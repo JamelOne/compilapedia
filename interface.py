@@ -1,7 +1,8 @@
 import tkinter as tk
 from tkinter import scrolledtext
-import nome, artigo, separadores, final, adjetivo, automato
+from compilador import nome, artigo, separadores, final, adjetivo, automato
 import time, re
+
 list_regra = [nome.automato,artigo.automato,separadores.automato,
                 final.automato,adjetivo.automato]
 list_finais = [nome.finais,artigo.finais,separadores.finais,
