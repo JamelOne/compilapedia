@@ -1,5 +1,3 @@
-from automato import *
-
 automato = {0: {"[O|o|A|a]": 1, "[U|u]":2},
             1: {"[s]": 5},
             2: {"[n]": 3, "[m]": 4},

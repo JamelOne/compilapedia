@@ -1,0 +1,45 @@
+
+
+
+
+
+Início do Processamento - Texto Original:Mario Sergio Cortella (Londrina, 5 de março de 1954) é um filósofo, escritor, educador, palestrante e professor universitário brasileiro.
+
+
+Início do Analisador Léxico:
+"Mario" : NOME
+"Sergio" : NOME
+"Cortella" : NOME
+"é" : VERBO
+"um" : ARTIGO
+"filósofo" : ADJETIVO
+"," : SEPARADOR
+"escritor" : ADJETIVO
+"," : SEPARADOR
+"educador" : ADJETIVO
+"," : SEPARADOR
+"palestrante" : ADJETIVO
+"e" : SEPARADOR
+"professor" : ADJETIVO
+"universitário" : ADJETIVO
+"brasileiro" : ADJETIVO
+"." : FINAL
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Mario Sergio Cortella'}
+{'tipo': 'VERBO', 'conteudo': 'é'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'filósofo'}
+{'tipo': 'SEPARADOR', 'conteudo': ','}
+{'tipo': 'ADJETIVO', 'conteudo': 'escritor'}
+{'tipo': 'SEPARADOR', 'conteudo': ','}
+{'tipo': 'ADJETIVO', 'conteudo': 'educador'}
+{'tipo': 'SEPARADOR', 'conteudo': ','}
+{'tipo': 'ADJETIVO', 'conteudo': 'palestrante'}
+{'tipo': 'SEPARADOR', 'conteudo': 'e'}
+{'tipo': 'ADJETIVO', 'conteudo': 'professor universitário brasileiro'}
+{'tipo': 'FINAL', 'conteudo': '.'}
+A cadeia é uma cadeia válida!
+
+
+

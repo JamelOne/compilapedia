@@ -1,5 +1,3 @@
-from automato import *
-
 maiuscula = "[A-Z|Á|À|Â|Ã|É|È|Ê|Í|Ó|Ô|Õ|Ú|Ç|Ñ|-]"
 minuscula = "[a-z|á|à|â|ã|é|è|ê|í|ó|ô|õ|ú|ç|ñ|-]"
 

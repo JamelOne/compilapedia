@@ -101,7 +101,7 @@ def clickMe():
     # FRONTEND
     texto = nameEntered.get('1.0', 'end')
     with open('Output.txt', 'a') as f:
-        f.write('\nInício do Processamento - Texto Original:')
+        f.write('\nInício do Processamento - Texto Original: ')
         f.write(texto)
         f.close() 
     
