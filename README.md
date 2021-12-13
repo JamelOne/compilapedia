@@ -3,6 +3,7 @@ Para instalar o tkinter (aplicação de interface gráfica) use o seguinte coman
 
 sudo apt install python3-tk
 
+![Alt text](mohawk.jpeg?raw=true "Title")
 <!--
 NOME [DONE]
 ARTIGO [DONE]
