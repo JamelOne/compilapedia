@@ -1,0 +1,20 @@
+
+Início do Processamento - Texto Original: João é um advogado.
+
+Início do Analisador Léxico:
+"João" : NOME
+"é" : VERBO
+"um" : ARTIGO
+"advogado" : ADJETIVO
+"." : FINAL
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'João'}
+{'tipo': 'VERBO', 'conteudo': 'é'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'advogado'}
+{'tipo': 'FINAL', 'conteudo': '.'}
+A cadeia é uma cadeia válida!
+
+
+
