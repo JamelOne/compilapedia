@@ -107,7 +107,6 @@ Início do Analisador Sintático:
 {'tipo': 'FINAL', 'conteudo': '.'}  
 A cadeia é uma cadeia válida!  
 
-
 # Exemplo 3:
 
 Início do Processamento - Texto Original: Marco Túlio Cícero (em latim: Marcus Tullius Cicero,romaniz.: Kikeron; 106 – 43 a.C.) foi um advogado, político, escritor, orador e filósofo da gens Túlia da República Romana eleito cônsul.  
