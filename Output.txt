@@ -157,3 +157,413 @@ A cadeia � uma cadeia v�lida!
 
 
 
+
+Início do Processamento - Texto Original: Latrell é um estudante de computação.
+
+Início do Analisador Léxico:
+"Latrell" : NOME
+"é" : VERBO
+"um" : ARTIGO
+"estudante" : ADJETIVO
+"de" : ADJETIVO
+"computação" : ADJETIVO
+"." : FINAL
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Latrell'}
+{'tipo': 'VERBO', 'conteudo': 'é'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'estudante de computação'}
+{'tipo': 'FINAL', 'conteudo': '.'}
+A cadeia é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Mario é um cavalo.
+
+Início do Analisador Léxico:
+"Mario" : NOME
+"é" : VERBO
+"um" : ARTIGO
+"cavalo" : ADJETIVO
+"." : FINAL
+
+Início do Processamento - Texto Original: Mario é um cavalo.
+
+Início do Analisador Léxico:
+"Mario" : NOME
+"é" : VERBO
+"um" : ARTIGO
+"cavalo" : ADJETIVO
+"." : FINAL
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Mario'}
+{'tipo': 'VERBO', 'conteudo': 'é'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'cavalo'}
+{'tipo': 'FINAL', 'conteudo': '.'}
+A cadeia é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Gordox é bom e inteligente.
+
+Início do Analisador Léxico:
+"Gordox" : NOME
+"é" : VERBO
+"bom" : ADJETIVO
+"e" : SEPARADOR
+"inteligente" : ADJETIVO
+"." : FINAL
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Gordox'}
+{'tipo': 'VERBO', 'conteudo': 'é'}
+{'tipo': 'ADJETIVO', 'conteudo': 'bom'}
+{'tipo': 'SEPARADOR', 'conteudo': 'e'}
+{'tipo': 'ADJETIVO', 'conteudo': 'inteligente'}
+{'tipo': 'FINAL', 'conteudo': '.'}
+A cadeia é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: André é um irmão camarada.
+
+Início do Processamento - Texto Original: André é uma zebra listrada.
+
+Início do Analisador Léxico:
+"André" : NOME
+"é" : VERBO
+"uma" : ARTIGO
+"zebra" : ADJETIVO
+"listrada" : ADJETIVO
+"." : FINAL
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'André'}
+{'tipo': 'VERBO', 'conteudo': 'é'}
+{'tipo': 'ARTIGO', 'conteudo': 'uma'}
+{'tipo': 'ADJETIVO', 'conteudo': 'zebra listrada'}
+{'tipo': 'FINAL', 'conteudo': '.'}
+A cadeia é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Frangos é ótimo.
+
+Início do Analisador Léxico:
+"Frangos" : NOME
+"é" : VERBO
+"ótimo" : ADJETIVO
+"." : FINAL
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Frangos'}
+{'tipo': 'VERBO', 'conteudo': 'é'}
+{'tipo': 'ADJETIVO', 'conteudo': 'ótimo'}
+{'tipo': 'FINAL', 'conteudo': '.'}
+A cadeia é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Ruanca é um professor.
+
+Início do Analisador Léxico:
+"Ruanca" : NOME
+"é" : VERBO
+"um" : ARTIGO
+"professor" : ADJETIVO
+"." : FINAL
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Ruanca'}
+{'tipo': 'VERBO', 'conteudo': 'é'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'professor'}
+{'tipo': 'FINAL', 'conteudo': '.'}
+A cadeia é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Jhonas foi um grande atleta e filósofo brasileiro.
+
+Início do Analisador Léxico:
+"Jhonas" : NOME
+"foi" : VERBO
+"um" : ARTIGO
+"grande" : ADJETIVO
+"atleta" : ADJETIVO
+"e" : SEPARADOR
+"filósofo" : ADJETIVO
+"brasileiro" : ADJETIVO
+"." : FINAL
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Jhonas'}
+{'tipo': 'VERBO', 'conteudo': 'foi'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'grande atleta'}
+{'tipo': 'SEPARADOR', 'conteudo': 'e'}
+{'tipo': 'ADJETIVO', 'conteudo': 'filósofo brasileiro'}
+{'tipo': 'FINAL', 'conteudo': '.'}
+A cadeia é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Jhonas foi um grande atleta e filósofo bra~
+
+Início do Analisador Léxico:
+"Jhonas" : NOME
+"foi" : VERBO
+"um" : ARTIGO
+"grande" : ADJETIVO
+"atleta" : ADJETIVO
+"e" : SEPARADOR
+"filósofo" : ADJETIVO
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Jhonas'}
+{'tipo': 'VERBO', 'conteudo': 'foi'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'grande atleta'}
+{'tipo': 'SEPARADOR', 'conteudo': 'e'}
+{'tipo': 'ADJETIVO', 'conteudo': 'filósofo'}
+A cadeia não é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Jhonas foi um grande atleta e filósofo bra~]
+
+Início do Analisador Léxico:
+"Jhonas" : NOME
+"foi" : VERBO
+"um" : ARTIGO
+"grande" : ADJETIVO
+"atleta" : ADJETIVO
+"e" : SEPARADOR
+"filósofo" : ADJETIVO
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Jhonas'}
+{'tipo': 'VERBO', 'conteudo': 'foi'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'grande atleta'}
+{'tipo': 'SEPARADOR', 'conteudo': 'e'}
+{'tipo': 'ADJETIVO', 'conteudo': 'filósofo'}
+A cadeia não é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Jhonas foi um grande atleta e filósofo bra~]
+
+Início do Analisador Léxico:
+"Jhonas" : NOME
+"foi" : VERBO
+"um" : ARTIGO
+"grande" : ADJETIVO
+"atleta" : ADJETIVO
+"e" : SEPARADOR
+"filósofo" : ADJETIVO
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Jhonas'}
+{'tipo': 'VERBO', 'conteudo': 'foi'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'grande atleta'}
+{'tipo': 'SEPARADOR', 'conteudo': 'e'}
+{'tipo': 'ADJETIVO', 'conteudo': 'filósofo'}
+A cadeia não é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Jhonas foi um grande atleta e filósofo bra~][
+
+Início do Analisador Léxico:
+"Jhonas" : NOME
+"foi" : VERBO
+"um" : ARTIGO
+"grande" : ADJETIVO
+"atleta" : ADJETIVO
+"e" : SEPARADOR
+"filósofo" : ADJETIVO
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Jhonas'}
+{'tipo': 'VERBO', 'conteudo': 'foi'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'grande atleta'}
+{'tipo': 'SEPARADOR', 'conteudo': 'e'}
+{'tipo': 'ADJETIVO', 'conteudo': 'filósofo'}
+A cadeia não é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Jhonas foi um grande atleta e filósofo bragsdf
+
+Início do Analisador Léxico:
+"Jhonas" : NOME
+"foi" : VERBO
+"um" : ARTIGO
+"grande" : ADJETIVO
+"atleta" : ADJETIVO
+"e" : SEPARADOR
+"filósofo" : ADJETIVO
+"bragsdf" : ADJETIVO
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Jhonas'}
+{'tipo': 'VERBO', 'conteudo': 'foi'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'grande atleta'}
+{'tipo': 'SEPARADOR', 'conteudo': 'e'}
+A cadeia não é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Jhonas foi um grande atleta e filósofo bragsdf´
+
+Início do Analisador Léxico:
+"Jhonas" : NOME
+"foi" : VERBO
+"um" : ARTIGO
+"grande" : ADJETIVO
+"atleta" : ADJETIVO
+"e" : SEPARADOR
+"filósofo" : ADJETIVO
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Jhonas'}
+{'tipo': 'VERBO', 'conteudo': 'foi'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'grande atleta'}
+{'tipo': 'SEPARADOR', 'conteudo': 'e'}
+{'tipo': 'ADJETIVO', 'conteudo': 'filósofo'}
+A cadeia não é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Jhonas foi um grande atleta e filósofo bragsdf´.
+
+Início do Analisador Léxico:
+"Jhonas" : NOME
+"foi" : VERBO
+"um" : ARTIGO
+"grande" : ADJETIVO
+"atleta" : ADJETIVO
+"e" : SEPARADOR
+"filósofo" : ADJETIVO
+"." : FINAL
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Jhonas'}
+{'tipo': 'VERBO', 'conteudo': 'foi'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'grande atleta'}
+{'tipo': 'SEPARADOR', 'conteudo': 'e'}
+{'tipo': 'ADJETIVO', 'conteudo': 'filósofo'}
+{'tipo': 'FINAL', 'conteudo': '.'}
+A cadeia é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Ryc é um anjo.
+
+Início do Analisador Léxico:
+"Ryc" : NOME
+"é" : VERBO
+"um" : ARTIGO
+"anjo" : ADJETIVO
+"." : FINAL
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Ryc'}
+{'tipo': 'VERBO', 'conteudo': 'é'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'anjo'}
+{'tipo': 'FINAL', 'conteudo': '.'}
+A cadeia é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Raavi é um bom amigo.
+
+Início do Analisador Léxico:
+"Raavi" : NOME
+"é" : VERBO
+"um" : ARTIGO
+"bom" : ADJETIVO
+"amigo" : ADJETIVO
+"." : FINAL
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Raavi'}
+{'tipo': 'VERBO', 'conteudo': 'é'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'bom amigo'}
+{'tipo': 'FINAL', 'conteudo': '.'}
+A cadeia é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Raavi é um bom amigo e um irmão camarada.
+
+Início do Analisador Léxico:
+"Raavi" : NOME
+"é" : VERBO
+"um" : ARTIGO
+"bom" : ADJETIVO
+"amigo" : ADJETIVO
+"e" : SEPARADOR
+"um" : ARTIGO
+"irmão" : ADJETIVO
+"camarada" : ADJETIVO
+"." : FINAL
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Raavi'}
+{'tipo': 'VERBO', 'conteudo': 'é'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'bom amigo'}
+{'tipo': 'SEPARADOR', 'conteudo': 'e'}
+{'tipo': 'ARTIGO', 'conteudo': 'um'}
+{'tipo': 'ADJETIVO', 'conteudo': 'irmão camarada'}
+{'tipo': 'FINAL', 'conteudo': '.'}
+A cadeia é uma cadeia válida!
+
+
+
+
+Início do Processamento - Texto Original: Raavi é amigo.
+
+Início do Analisador Léxico:
+"Raavi" : NOME
+"é" : VERBO
+"amigo" : ADJETIVO
+"." : FINAL
+
+Início do Analisador Sintático:
+{'tipo': 'NOME', 'conteudo': 'Raavi'}
+{'tipo': 'VERBO', 'conteudo': 'é'}
+{'tipo': 'ADJETIVO', 'conteudo': 'amigo'}
+{'tipo': 'FINAL', 'conteudo': '.'}
+A cadeia é uma cadeia válida!
+
+
+

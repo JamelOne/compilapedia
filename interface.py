@@ -36,12 +36,17 @@ def analisarLexico(lista_palavras):
             texto+=f'"{elem}" : VERBO\n'
         else:
             for i in range(len(list_regra)):
+                # print(f'cadeia "{elem}" sendo analisada para autômato: {texto_retorno[i]}')
+                print(f'"{elem}" para {texto_retorno[i]}', end=' - ')
                 if(automato.aceita(list_regra[i], 0, list_finais[i], elem)):
+                    print('Válido\n')
                     list_tokens.append({
                         'tipo':texto_retorno[i],
                         'conteudo':elem})
                     texto+=f'"{elem}" : {texto_retorno[i]}\n'
                     break
+                else:
+                    print('Inválido\n')
     
     # FRONTEND
     labelLex.configure(text='Anls. Léxico\n'+texto)
@@ -67,9 +72,19 @@ def analisadorSintatico(lista_tokens):
         ultimo_token = token
     
     texto = ''
+    nome = ''
+    adjetivos = []
     for elem in lista_processada:
-            texto+=str(elem)+'\n'
+        texto+=str(elem)+'\n'
+        if(elem['tipo']=='NOME'):
+            nome = elem['conteudo']
+        if(elem['tipo']=='ADJETIVO'):
+            adjetivos.append(elem['conteudo'])
     
+    labelFinal.configure(
+        text=f'Relatório Simplificado:\nNome: {nome}\nAdjetivos: {adjetivos}'
+    )
+
 
     # Checando se a cadeia pode ser considerada válida
     # segundo o padrão aceito pela linguagem
@@ -96,6 +111,7 @@ def analisadorSintatico(lista_tokens):
         f.write('\nInício do Analisador Sintático:\n')
         f.write(texto)
         f.close()
+    
     return res
 
 def clickMe():
@@ -127,12 +143,14 @@ labelLex.grid(row=2, column=0)
 
 labelSint = tk.Label(window, text = "Anls. Sintático\n")
 labelSint.grid(row=2, column=1)
+
+labelFinal = tk.Label(window, text = "Relatório Simplificado:\n")
+labelFinal.grid(row=3, column=0, columnspan=2)
  
 nameEntered = scrolledtext.ScrolledText(window, width=70, height=10)
 nameEntered.grid(row=1, column=0, columnspan=2)
 
 button = tk.Button(window, text = "Click Me", command = clickMe)
 button.grid(row=0, column=0, columnspan=2)
-
 
 window.mainloop()
