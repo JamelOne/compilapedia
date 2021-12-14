@@ -37,8 +37,122 @@ Linux:
 
 sudo apt install python3-tk
 
-# Exemplos:
+# Exemplo 1:
+
+Início do Processamento - Texto Original: Caio Júlio César (em latim: Caius ou Gaius Iulius Caesar) foi um patrício, líder militar e político romano.  
+
+Início do Analisador Léxico:  
+"Caio" : NOME  
+"Júlio" : NOME  
+"César" : NOME  
+"foi" : VERBO  
+"um" : ARTIGO  
+"patrício" : ADJETIVO  
+"," : SEPARADOR  
+"líder" : ADJETIVO  
+"militar" : ADJETIVO  
+"e" : SEPARADOR  
+"político" : ADJETIVO  
+"romano" : ADJETIVO  
+"." : FINAL  
+
+Início do Analisador Sintático:  
+{'tipo': 'NOME', 'conteudo': 'Caio Júlio César'}  
+{'tipo': 'VERBO', 'conteudo': 'foi'}  
+{'tipo': 'ARTIGO', 'conteudo': 'um'}  
+{'tipo': 'ADJETIVO', 'conteudo': 'patrício'}  
+{'tipo': 'SEPARADOR', 'conteudo': ','}  
+{'tipo': 'ADJETIVO', 'conteudo': 'líder militar'}  
+{'tipo': 'SEPARADOR', 'conteudo': 'e'}  
+{'tipo': 'ADJETIVO', 'conteudo': 'político romano'}  
+{'tipo': 'FINAL', 'conteudo': '.'}  
+A cadeia é uma cadeia válida!  
+
+# Exemplo 2:
+
+Início do Processamento - Texto Original: Mario Sergio Cortella (Londrina, 5 de março de 1954) é um filósofo, escritor, educador, palestrante e professor universitário brasileiro.  
+
+Início do Analisador Léxico:  
+"Mario" : NOME  
+"Sergio" : NOME  
+"Cortella" : NOME  
+"é" : VERBO  
+"um" : ARTIGO  
+"filósofo" : ADJETIVO  
+"," : SEPARADOR  
+"escritor" : ADJETIVO  
+"," : SEPARADOR  
+"educador" : ADJETIVO  
+"," : SEPARADOR  
+"palestrante" : ADJETIVO  
+"e" : SEPARADOR  
+"professor" : ADJETIVO  
+"universitário" : ADJETIVO  
+"brasileiro" : ADJETIVO  
+"." : FINAL  
+
+Início do Analisador Sintático:  
+{'tipo': 'NOME', 'conteudo': 'Mario Sergio Cortella'}  
+{'tipo': 'VERBO', 'conteudo': 'é'}  
+{'tipo': 'ARTIGO', 'conteudo': 'um'}  
+{'tipo': 'ADJETIVO', 'conteudo': 'filósofo'}  
+{'tipo': 'SEPARADOR', 'conteudo': ','}  
+{'tipo': 'ADJETIVO', 'conteudo': 'escritor'}  
+{'tipo': 'SEPARADOR', 'conteudo': ','}  
+{'tipo': 'ADJETIVO', 'conteudo': 'educador'}  
+{'tipo': 'SEPARADOR', 'conteudo': ','}  
+{'tipo': 'ADJETIVO', 'conteudo': 'palestrante'}  
+{'tipo': 'SEPARADOR', 'conteudo': 'e'}  
+{'tipo': 'ADJETIVO', 'conteudo': 'professor universitário brasileiro'}  
+{'tipo': 'FINAL', 'conteudo': '.'}  
+A cadeia é uma cadeia válida!  
 
 
+# Exemplo 3:
 
+Início do Processamento - Texto Original: Marco Túlio Cícero (em latim: Marcus Tullius Cicero,romaniz.: Kikeron; 106 – 43 a.C.) foi um advogado, político, escritor, orador e filósofo da gens Túlia da República Romana eleito cônsul.  
 
+Início do Analisador Léxico:    
+"Marco" : NOME  
+"Túlio" : NOME  
+"Cícero" : NOME  
+"foi" : VERBO  
+"um" : ARTIGO  
+"advogado" : ADJETIVO  
+"," : SEPARADOR  
+"político" : ADJETIVO  
+"," : SEPARADOR  
+"escritor" : ADJETIVO  
+"," : SEPARADOR  
+"orador" : ADJETIVO  
+"e" : SEPARADOR  
+"filósofo" : ADJETIVO  
+"da" : ADJETIVO  
+"gens" : ADJETIVO  
+"Túlia" : NOME  
+"da" : ADJETIVO  
+"República" : NOME  
+"Romana" : NOME  
+"eleito" : ADJETIVO  
+"cônsul" : ADJETIVO  
+"." : FINAL  
+
+Início do Analisador Sintático:  
+{'tipo': 'NOME', 'conteudo': 'Marco Túlio Cícero'}  
+{'tipo': 'VERBO', 'conteudo': 'foi'}  
+{'tipo': 'ARTIGO', 'conteudo': 'um'}  
+{'tipo': 'ADJETIVO', 'conteudo': 'advogado'}  
+{'tipo': 'SEPARADOR', 'conteudo': ','}  
+{'tipo': 'ADJETIVO', 'conteudo': 'político'}  
+{'tipo': 'SEPARADOR', 'conteudo': ','}  
+{'tipo': 'ADJETIVO', 'conteudo': 'escritor'}  
+{'tipo': 'SEPARADOR', 'conteudo': ','}  
+{'tipo': 'ADJETIVO', 'conteudo': 'orador'}  
+{'tipo': 'SEPARADOR', 'conteudo': 'e'}  
+{'tipo': 'ADJETIVO', 'conteudo': 'filósofo da gens'}  
+{'tipo': 'NOME', 'conteudo': 'Túlia'}  
+{'tipo': 'ADJETIVO', 'conteudo': 'da'}  
+{'tipo': 'NOME', 'conteudo': 'República Romana'}  
+{'tipo': 'ADJETIVO', 'conteudo': 'eleito cônsul'}  
+{'tipo': 'FINAL', 'conteudo': '.'}  
+A cadeia não é uma cadeia válida!  
