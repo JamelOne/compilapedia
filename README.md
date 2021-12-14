@@ -3,7 +3,7 @@
 # Desenvolvedores
 
 Andre Siqueira Ramos de Lima  
-Fabio Augusto Ramanho  
+Fabio Augusto Ramalho  
 Victor Daisuke Dano  
 
 # Conceitos:
