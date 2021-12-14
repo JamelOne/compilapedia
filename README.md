@@ -39,7 +39,7 @@ sudo apt install python3-tk
 
 # Exemplo 1:
 
-![Alt text](imagens/Cortella.png?raw=true "Title")
+![Alt text](imagens/JulioCesar.png?raw=true "Caio Júlio César")
 
 Início do Processamento - Texto Original: Caio Júlio César (em latim: Caius ou Gaius Iulius Caesar) foi um patrício, líder militar e político romano.  
 
@@ -72,7 +72,7 @@ A cadeia é uma cadeia válida!
 
 # Exemplo 2:
 
-![Alt text](imagens/Cortella.png?raw=true "Title")
+![Alt text](imagens/Cortella.png?raw=true "Mario Sergio Cortella")
 
 Início do Processamento - Texto Original: Mario Sergio Cortella (Londrina, 5 de março de 1954) é um filósofo, escritor, educador, palestrante e professor universitário brasileiro.  
 
@@ -113,7 +113,7 @@ A cadeia é uma cadeia válida!
 
 # Exemplo 3:
 
-![Alt text](imagens/Marco.png?raw=true "Title")
+![Alt text](imagens/Marco.png?raw=true "Marco Túlio Cícero")
 
 Início do Processamento - Texto Original: Marco Túlio Cícero (em latim: Marcus Tullius Cicero,romaniz.: Kikeron; 106 – 43 a.C.) foi um advogado, político, escritor, orador e filósofo da gens Túlia da República Romana eleito cônsul.  
 
