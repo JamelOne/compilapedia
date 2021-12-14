@@ -2,7 +2,7 @@
 
 # Desenvolvedores
 
-André Siqueira Ramos de Lima  
+Andre Siqueira Ramos de Lima  
 Fabio Augusto Ramanho  
 Victor Daisuke Dano  
 
