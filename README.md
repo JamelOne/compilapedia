@@ -37,6 +37,19 @@ Linux:
 
 sudo apt install python3-tk
 
+# Instruções de uso:
+
+No terminal, dentro do diretório contendo "interface.py", digite execute o script com o comando:  
+
+python interface.py  
+
+Irá abrir a seguinte interface:  
+
+![Alt text](imagens/interface.png?raw=true "Interface")
+
+Funciona como um editor de texto, podendo colar o texto no campo.  
+Após colar o texto, basta clicar no botão "Click Me" e os analisadores serão executados.  
+
 # Exemplo 1:
 
 ![Alt text](imagens/JulioCesar.png?raw=true "Caio Júlio César")
