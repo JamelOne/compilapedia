@@ -22,7 +22,7 @@ Ao ser reconhecida, uma palavra é transformada em um token, que será inserida 
 # Analisador Sintático:
 
 Com a lista de tokens recebida do analisador léxico, é feita uma concatenação de tokens iguais adjacentes (Para casos de Nomes e Adjetivos compostos).  
-Feito o tratamento, a lista de tokens é submetida a uma analise sintática no autômato Geral, assim, será verificado se os tokens formam uma composição aceita pela linguagem.   
+Feito o tratamento, a lista de tokens é submetida a uma analise sintática no autômato Geral, assim, será verificado se os tokens formam uma composição aceita pela linguagem.     
 
 # Requisitos de execução:
 
@@ -49,6 +49,8 @@ Irá abrir a seguinte interface:
 
 Funciona como um editor de texto, podendo colar o texto no campo.  
 Após colar o texto, basta clicar no botão "Click Me" e os analisadores serão executados.  
+
+Será gerado um arquivo chamado de "Output.txt" contendo a frase inserida, o resultado da análise léxica e sintática, respectivamente, bem como seus TOKENS, cada execução irá concatenar os resultados nele.
 
 # Exemplo 1:
 
